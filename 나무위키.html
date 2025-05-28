@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>나무위키 스타일 헤더</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #111;
+      color: #ddd;
+      padding-top: 60px;
+    }
+
+    .top-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #1b1b1b;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      z-index: 999;
+      /* Removed display, justify-content, align-items, padding */
+    }
+
+    .top-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      height: 100%;
+    }
+
+    .left-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: 70px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .right-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      /* Removed margin */
+    }
+
+    .menu a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 13px;
+      background-color: transparent;
+      padding: 6px 10px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: background-color 0.2s ease;
+      height: 36px;
+      line-height: 36px;
+    }
+
+    .menu a:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    .search-box {
+      background-color: #000;
+      border: 1px solid #000000;
+      padding: 13px 25px;
+      border-radius: 6px;
+      width: 300px;
+      font-size: 15px;
+      text-decoration-color: #ffff;
+    }
+
+    .icon {
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .content-box {
+      flex: 1;
+      max-width: 900px;
+      background-color: #1a1a1a;
+      padding: 20px;
+      border: 1px solid #444;
+      border-radius: 7px;
+      margin-right: 20px;
+    }
+
+    .sidebar {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .widget {
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 8px;
+      color: #ccc;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      padding: 10px;
+      min-height: 50px;
+    }
+
+    .widget:nth-child(1) {
+      height: 120px;
+    }
+
+    .widget:nth-child(2) {
+      height: 180px;
+    }
+
+    .widget:nth-child(3) {
+      height: 90px;
+    }
+
+    .tensor-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .tensor-link:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-header">
+    <div class="top-inner">
+      <div class="left-section">
+        <img src="data_image_png;base….png" style="height: 2.4rem; width: auto; margin-right: 0.5rem;" alt="나무위키 로고">
+        <nav class="menu">
+          <a href="#"><span class="icon">🕒</span>최근 변경</a>
+          <a href="#"><span class="icon">🦉</span>최근 토론</a>
+          <a href="#"><span class="icon">🧐</span>특수 기능 ▾</a>
+        </nav>
+      </div>
+      <div class="right-section">
+        <input type="text" class="search-box" placeholder="여기에서 검색">
+        <span class="icon">👤</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="content-box">
+      <h1><a href="#" class="tensor-link">텐서</a></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse reiciendis repellendus, voluptatem quisquam consequatur beatae dolor neque porro hic, tempore atque vel autem minus nisi cum eius quo modi.</p>
+      <p style="margin-top: 1000px;">끄읕</p>
+    </div>
+    <div class="sidebar">
+      <div class="widget">최근 변경</div>
+      <div class="widget">나무뉴스</div>
+      <div class="widget">광고 또는 유틸 영역</div>
+    </div>
+  </div>
+
+</body>
+</html>
